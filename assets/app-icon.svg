@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Manga Drama Studio icon</title>
+  <desc id="desc">A custom book, film, and play mark for Manga Drama Studio.</desc>
+  <rect width="1024" height="1024" rx="190" fill="#12343b" />
+  <path d="M190 270c0-46 37-83 83-83h478c46 0 83 37 83 83v484c0 46-37 83-83 83H273c-46 0-83-37-83-83V270z" fill="#f7f4ea" />
+  <path d="M250 283c0-24 19-43 43-43h171c45 0 82 37 82 82v462H293c-24 0-43-19-43-43V283z" fill="#f05d5e" />
+  <path d="M546 322c0-45 37-82 82-82h103c24 0 43 19 43 43v458c0 24-19 43-43 43H546V322z" fill="#20b2aa" />
+  <path d="M546 318v468" stroke="#12343b" stroke-width="32" stroke-linecap="round" />
+  <path d="M330 358h134M330 448h134M330 538h134" stroke="#fff8ed" stroke-width="34" stroke-linecap="round" />
+  <path d="M626 365l101 58-101 58V365z" fill="#12343b" />
+  <path d="M624 575h98M624 655h98" stroke="#12343b" stroke-width="36" stroke-linecap="round" />
+  <path d="M198 754h628" stroke="#12343b" stroke-width="32" stroke-linecap="round" opacity=".18" />
+</svg>

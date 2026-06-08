@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manga Drama Studio</title>
+    <meta
+      name="description"
+      content="Manga Drama Studio is a creator production tool for licensed fiction-to-short-video workflows."
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/app-icon-1024.png" />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #18212f;
+        --muted: #607086;
+        --line: #d8e0ea;
+        --bg: #f7f9fc;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-2: #b91c1c;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.55;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      header,
+      main,
+      footer {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 24px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      nav {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      a {
+        color: var(--accent);
+        font-weight: 650;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 760;
+      }
+      .brand img {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+      }
+      .hero {
+        padding: 56px 0 32px;
+        display: grid;
+        gap: 28px;
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+        align-items: start;
+      }
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 1.02;
+        letter-spacing: 0;
+        margin: 0 0 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 0 0 12px;
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      .lead {
+        font-size: 20px;
+        color: var(--muted);
+        max-width: 760px;
+      }
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 22px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        padding: 20px 0 52px;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 0;
+      }
+      li + li {
+        margin-top: 8px;
+      }
+      footer {
+        padding: 28px 0 40px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+      footer p + p {
+        margin-top: 6px;
+      }
+      .tag {
+        display: inline-block;
+        color: var(--accent-2);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 760px) {
+        header,
+        .hero {
+          display: block;
+        }
+        nav {
+          margin-top: 14px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <img src="assets/app-icon.svg" alt="" />
+        <span>Manga Drama Studio</span>
+      </div>
+      <nav aria-label="Primary">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="oauth/callback/">OAuth Callback</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="tag">Creator production software</span>
+          <h1>Manga Drama Studio</h1>
+          <p class="lead">
+            A production and operations tool for creators who turn authorized fiction text into short vertical animated
+            episodes, review quality, and publish approved videos through official platform APIs.
+          </p>
+        </div>
+        <div class="panel">
+          <h2>What it does</h2>
+          <ul>
+            <li>Converts licensed novel text into episode plans, shots, captions, subtitles, and render tasks.</li>
+            <li>Locks character and style references to reduce drift across long-running daily series.</li>
+            <li>Runs media QA and manual review before any video enters a publishing queue.</li>
+            <li>Uses official OAuth and posting APIs. It does not ask for account passwords or browser cookies.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="grid" aria-label="Capabilities">
+        <article class="panel">
+          <h2>Licensed input</h2>
+          <p>
+            The workflow is designed for authorized source material. Operators must confirm adaptation rights before
+            producing or publishing any episode.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>AI production</h2>
+          <p>
+            The system separates story adaptation, image keyframes, video shots, voice, subtitles, assembly, and QA so
+            output quality can be tested and improved step by step.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>Publishing controls</h2>
+          <p>
+            Publishing plans are generated only after quality and rights gates pass. Access tokens are read from secure
+            runtime storage and are never committed to source control.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Manga Drama Studio is an independent creator operations tool. Platform names belong to their owners.</p>
+      <p>Support and privacy requests are handled by the app operator listed in the TikTok Developer application.</p>
+    </footer>
+  </body>
+</html>
